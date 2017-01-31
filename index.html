@@ -1,0 +1,68 @@
+
+<html> 
+<head>
+	<link type="text/css" rel="stylesheet" href="main.css" />
+	<title> Dallen's wonderfull website </title> 
+     <script>function banner(){ 
+var text = confirm("Do you want to go to bonk?"); 
+return text; 
+}
+function answer(){
+	var radio = document.getElementsByName("trivia");
+	var selection = false;
+	var message = "";
+	for( var i = 0; i < radio.length; i++) {
+		if(radio[i].value == "kcr" && radio[i].checked == true) {
+			selection = true;
+		}//end if statement
+		}//end for loop
+
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+
+}//end function answer
+     </script>
+</head> 
+<body id="background">
+	<a href="http://bonk.io/" onclick="return banner()">
+	<header id="pizza"> <img src="http://www.cicis.com/media/1137/pizza_trad_alfredo.png"> </header></a>
+	<nav>
+		<ul id="navmenu">
+			<li class="navitem"> <a href="http://na.leagueoflegends.com/"> League of Legends</a> </li>
+			<li class="navitem"><a href="http://www.mobafire.com/league-of-legends/browse"> League of Legends champion builds</a></li>
+			<li class="navitem"><a href="FunnyStuffInLeague.html">coming soon</a> </li>
+		<a href="file:///C:/Users/student/Desktop/JUAN%20CENA/index.html"><h1> Reload/Refresh Page</h1></a> <!--Delete before you submit-->
+		</ul>
+	</nav>
+<h1>League of Legends for new players </h1>
+<p class="paragraph"> League can be a difficut thing for <u>beginners</u>, with as <b>many options characters or champions along with all the diffrent items you can buy</b> some people just <i>give up</i> with how hard the game is and never play it again.
+</p>
+<ol>
+	<li class="listitem"> I will give you many tips and tricks to improve your gameplay and decesion making </li>
+	<li class="listitem"> For your first step you are going to want to choose you main role or champion.</li>
+	<li class="listitem">  The champion that I main is  Thresh the chain warden. He doesn't primarily do a lot of damage, but he can tank and "support" <span class="wrap-text">his</span> allies. </li>
+<div class="wrap-trivia">
+<h2 id="Stuff"> League of Legends Trivia </h2>
+<p> Who was the first champion released in 2013</p>
+<form> <div id="response"></div>
+<input type="radio" name="trivia" value=""> Azir <br>
+<input type="radio" name="trivia" value="kcr"> Thresh<br>
+<input type="radio" name="trivia" value=""> Tahm Kench <br>
+<input type="radio" name="trivia" value=""> JOHN CENA <br>
+<input type="button" id="submit" value="Click Here" onclick="answer()">
+</form>
+</div>
+<img src="http://lkimg.zamimg.com/assets/000/001/311.jpg" />
+<img id="Thresh" src="http://piq.codeus.net/static/media/userpics/piq_302214_400x400.png" />
+<img src="http://ddragon.leagueoflegends.com/cdn/7.1.1/img/champion/TahmKench.png" />
+<img id="JohnCena" src="http://avatars.tout.com/u/e79dd728f9d03da2e0c4ece34976c1e5/profile/John_Cena__Newer_.png" />
+<hr>
+<center> Dallen Kendrick <a href="https://www.youtube.com/"> My Favorite Website</a> </center>
+<footer> Thank you for Coming to my Website </footer>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eP99Bn69W3k" frameborder="0" allowfullscreen></iframe>
+</body> 
+</html>
